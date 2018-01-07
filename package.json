@@ -2,22 +2,14 @@
   "name": "adventu-resume",
   "version": "1.1.2",
   "description": "A fun way to go through a resume.",
-  "keywords": [
-    "text-adventure",
-    "interactive-fiction"
-  ],
+  "keywords": ["text-adventure", "interactive-fiction"],
   "author": "Joshua Denenberg",
   "license": "AML",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "files": [
-    "server.js",
-    "cartridges",
-    "console",
-    "terminal"
-  ],
+  "files": ["server.js", "cartridges", "console", "terminal"],
   "repository": {
     "type": "git",
     "url": ""
@@ -27,6 +19,9 @@
     "express": "^4.16.2",
     "express-session": "^1.10.3",
     "open": "^0.0.5"
+  },
+  "engines": {
+    "node": "6.11.2"
   },
   "homepage": "",
   "devDependencies": {}
