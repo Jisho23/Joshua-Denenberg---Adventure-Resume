@@ -60,7 +60,7 @@ const gameData = {
         macbook: {
           take: "Hey! Don't take my MacBook!",
           look:
-            "You see several open terminals running multiple projects! They include applications using react, rails, and express. You also see Josh is hard at work learning computer science algorithms, focusing on the Udemy tutorials by Stephen Grider and the Har}d CS50 course! There's also a couple other tutorials and works in progress. Some are social media esq. experiments, others try to use statistics to help play or analyze game data better, one is even building a frontend" +
+            "You see several open terminals running multiple projects! They include applications using react, rails, and express. You also see Josh is hard at work learning computer science algorithms, focusing on the Udemy tutorials by Stephen Grider and the Harvard CS50 course! There's also a couple other tutorials and works in progress. Some are social media esq. experiments, others try to use statistics to help play or analyze game data better, one is even building a frontend" +
             "for the Database of Woman Composers project. \n \n"
         },
         laptop: {
