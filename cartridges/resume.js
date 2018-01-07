@@ -259,10 +259,6 @@ function end() {
       closet: {
         displayName: "closet",
         destination: "Closet"
-      },
-      door: {
-        displayName: "door out",
-        destination: "Door"
       }
     };
   }
