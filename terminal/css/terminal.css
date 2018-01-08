@@ -1,9 +1,10 @@
 * {
-  background-color: black;
+  background: #000000;
   color: white;
   margin: 0;
   border: none;
-  font-size: 100%;
+  font-family: Didot, serif;
+  font-size: 1em;
 }
 *:focus {
   outline: none;
@@ -12,20 +13,20 @@ html,
 body,
 #input,
 #display {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
 }
 #input {
-  height: 100px;
+  height: 30px;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #00d100;
-  padding: 10px;
+  border-top: 1px solid #ffffff;
+  padding: 20px;
 }
 #display {
   line-height: 1.5em;
-  padding: 100px;
-  overflow-y: scroll;
+  padding: 10px;
+  overflow-y: auto;
   overflow-x: hidden;
   resize: none;
 }
@@ -33,7 +34,7 @@ body,
   width: 14px;
 }
 #display::-webkit-scrollbar-thumb {
-  background-color: #00d100;
+  background-color: white;
   border: 6px solid #000000;
 }
 #display::-webkit-scrollbar-track {

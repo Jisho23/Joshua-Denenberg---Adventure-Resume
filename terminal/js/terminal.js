@@ -87,7 +87,7 @@ function battleTextScroll(fullText, message, index) {
     fullText = $("#display").val();
     setTimeout(function() {
       battleTextScroll(fullText, message, index);
-    }, 25);
+    }, 15);
   } else {
     if (!toggleInput) {
       toggleInput = true;

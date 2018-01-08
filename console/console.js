@@ -192,7 +192,7 @@ var actions = {
     if (playerDestination === null) {
       return { message: "You can't go there.", success: false };
     }
-    getCurrentLocation(game).firstVisit = false;
+    // getCurrentLocation(game).firstVisit = false;
     if (getCurrentLocation(game).teardown !== undefined) {
       getCurrentLocation(game).teardown();
     }
