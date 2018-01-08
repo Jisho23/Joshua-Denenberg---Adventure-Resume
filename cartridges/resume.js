@@ -7,7 +7,7 @@ const gameData = {
     "you are considering hiring a new programmer, engineer, or software developer." +
     " Through this game, I am sure that you will find that " +
     "I am enthusiastic, knowledgable, creative, and most of all a capable programmer. " +
-    "As well, you will hopefully get to know a little bit more about me. \n \n",
+    "As well, you will hopefully get to know a little bit more about me, my hobbies, interests, and what I am currently working on (besides this game!). \n \n",
   outroText: "Thanks For playing!",
   closetOpen: false,
   player: {
@@ -24,7 +24,7 @@ const gameData = {
       description:
         "...You find yourself locked in my office! And you cannot " +
         "leave until you find three items of importance and use them! \n \n" +
-        "This is effectively the least intimidating escape room ever. You see a simple desk, bookshelf, closet, and door out." +
+        "This is effectively the least intimidating escape room ever. You see a simple desk, bookshelf, closet, and the door out." +
         "\nIf at any time you are confused, type 'help'.\n\n",
       items: {},
       exits: {
@@ -41,7 +41,7 @@ const gameData = {
           destination: "Closet"
         },
         exit: {
-          displayName: "exit the room",
+          displayName: "try to exit the room",
           destination: "End"
         }
       }
@@ -54,7 +54,7 @@ const gameData = {
         "You sit at Josh's desk. It has a Windows 'laptop' running several pieces of audio software and " +
         " a 'MacBook' running several terminals of predominately javascript and react.js applications. " +
         " There is a closed desk 'drawer'. Otherwise there are some assorted papers and notebooks, " +
-        "mostly random design sketches for projects. \n \n",
+        "mostly filled with random design sketches, notes, and wireframes for ongoing or future projects. \n \n",
       interactables: {
         desk: {
           look: "It's a sturdy wooden desk!",
@@ -70,7 +70,7 @@ const gameData = {
         macbook: {
           take: "Hey! Don't take my MacBook!",
           look:
-            "You see several open terminals running multiple projects! They include applications using" +
+            "You see several open terminals running multiple projects. They include applications using" +
             " react, rails, and express. You also see Josh is hard at work learning computer science" +
             " algorithms, focusing on the Udemy tutorials by Stephen Grider and the Harvard CS50 course! " +
             "There's also a couple other tutorials and works in progress. Some are social media esq. experiments, " +
@@ -83,12 +83,14 @@ const gameData = {
           look:
             "There's a window of Sibelius notation software running in addition to Ableton Live, Cubase, and " +
             "Audacity. On the desktop is a dizzying amount of games of too many genres to name but many are " +
-            "small studio, independent games. There's also a couple of game making engines such as Unity and Game Maker Studio."
+            "small studio, independent games. There's also a couple of game making engines such as Unity and Game Maker Studio." +
+            " Being a bit more invasive you see dozens of articles about topics related to music, software design, and game design--all written by Josh."
         },
         switch: {
           take: "Don't take my Switch! I was using that!",
           look:
-            "Josh has an odd choice of games: most of them are multiplayer including Crawl, OverCooked, and Puyo Tetris."
+            "Josh has an odd choice of games: most of them are multiplayer including Crawl, OverCooked, and Puyo Puyo Tetris." +
+            " It shows that Josh still prefers to game the old fashioned way: single screen and with friends."
         }
       },
       items: {
@@ -113,7 +115,7 @@ const gameData = {
           destination: "Closet"
         },
         exit: {
-          displayName: "exit the room",
+          displayName: "try to exit the room",
           destination: "End"
         }
       }
@@ -122,9 +124,10 @@ const gameData = {
       firstVisit: true,
       displayName: "Bookshelf",
       description:
-        "There is a sturdy bookshelf that is absolutely overflowing. On the top of the bookshelf are some impressive lookings 'folders." +
-        " On shelves are hundreds of 'scores' " +
-        "of music, classic and modern fiction and 'literature', writing and research 'guides', " +
+        "There is a sturdy bookshelf that is absolutely overflowing with stuff." +
+        " On the top of the bookshelf are some impressive lookings 'folders." +
+        " On the shelves are hundreds of 'scores' " +
+        "of music, classic and modern 'literature', writing and research 'guides', " +
         "some seemingly ancient Dungeons " +
         "and Dragons 'books', and a lot of Kung-Fu dvds. There is also a slew of non-fiction books, " +
         "mostly about history or biographies. \n \n",
@@ -145,20 +148,22 @@ const gameData = {
           take: "While tempting, now is not the time for a good read.",
           look:
             "You see books ranging from poetry (some of which looks like newer, first print books) " +
-            "to a compliation of the Sherlock Holmes stories. You even see a couple of graphic novels " +
+            "to a compliation of the Sherlock Holmes stories, and some sci-fi classics such as Enders Game." +
+            " You even see a couple of graphic novels " +
             "such as Sandman paperbacks."
         },
         books: {
           take:
-            "Hey, some of those DnD books are thirty years out of print! No touching!",
+            "Hey, some of those DnD books are thirty years out of print--making them older than me! No touching!",
           look:
-            "You look at the Dungeons and Dragons books and see they are really old! There is a set " +
+            "You look at the Dungeons and Dragons books and some are really, really old. There is a set " +
             "of the 2nd edition guides and a lot of 3rd edition as well! There are some old character sheets " +
             "and bookmarks for various monsters and such."
         },
         guides: {
           take:
-            "You're welcome to take them... but they probably won't be of much use unless you are writing a dissertation.",
+            "You're welcome to take them... but they probably won't be of much use unless you are writing a dissertation or doing " +
+            "some serious research.",
           look:
             "You see the MLA, Chicago, and Turabian research and writing style guides. Clearly Josh " +
             "knows a lot about research and writing!"
@@ -175,8 +180,8 @@ const gameData = {
         diplomas: {
           displayName: "Diplomas",
           description:
-            "Josh's diplomas show his BA from Uconn, Masters from the University of Hartford, and " +
-            "his Doctorate from the University of Toronto. You see several distinctions written on them for high marks.",
+            "Josh's diplomas show his Bachelor of Arts from Uconn, Masters of Music from the University of Hartford, and " +
+            "his Doctorate in Musical from the University of Toronto. You see several distinctions written on them for high marks.",
           use: function() {
             return readDiploma();
           },
@@ -194,7 +199,7 @@ const gameData = {
           destination: "Closet"
         },
         exit: {
-          displayName: "exit the room",
+          displayName: "try to exit the room",
           destination: "End"
         }
       }
@@ -219,7 +224,8 @@ const gameData = {
           look:
             "Wow! There's a boxed 'Atari' console from the 1970s! There's also a couple other " +
             "older consoles such as an NES and SNES--suffice to say it looks like Josh is fairly " +
-            "serious about older electronics and classic games (if this adventure game weren't evidence enough!)"
+            "serious about older electronics and classic games (if this adventure game weren't evidence enough!)" +
+            " There is also a crate filled with games--some of which are quite rare!"
         }
       },
       items: {
@@ -247,7 +253,7 @@ const gameData = {
           destination: "Bookshelf"
         },
         exit: {
-          displayName: "exit the room",
+          displayName: "try to exit the room",
           destination: "End"
         }
       }
@@ -288,7 +294,7 @@ function end() {
       `You need to search harder! There are three unique ` +
       `items to find, and you need to 'use' all of them for ` +
       `more information! Remember, you can type 'inventory' to ` +
-      `see what you have collected \n \n`;
+      `see what you have collected. \n \n`;
     gameData.map["End"].exits = {
       desk: {
         displayName: "desk",
@@ -318,8 +324,9 @@ function handleDoor() {
 function useKindle() {
   gameData.player.usedKindle = true;
   return (
-    "Searching more on the kindle, you find a couple books related to " +
-    "philosophy and technology. Josh clearly spends a lot of his time reading."
+    "Searching more on the kindle, you find a couple more books related to " +
+    "philosophy and technology. Josh clearly spends a lot of his time reading and " +
+    " tries to be as well versed as he can."
   );
 }
 
