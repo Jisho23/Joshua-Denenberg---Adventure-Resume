@@ -53,8 +53,8 @@ const gameData = {
       description:
         "You sit at Josh's desk. It has a Windows 'laptop' running several pieces of audio software and " +
         " a 'MacBook' running several terminals of predominately javascript and react.js applications. " +
-        " There is a closed desk 'drawer'. Otherwise there are some assorted papers and notebooks, " +
-        "mostly filled with random design sketches, notes, and wireframes for ongoing or future projects. \n \n",
+        "There is a closed desk 'drawer'. Otherwise there are assorted papers and notebooks. " +
+        "These are mostly filled with random design sketches, notes, and wireframes for ongoing or future projects. \n \n",
       interactables: {
         desk: {
           look: "It's a sturdy wooden desk!",
@@ -97,7 +97,9 @@ const gameData = {
         kindle: {
           displayName: "Kindle",
           description:
-            "Josh's kindle, which has several coding textbooks. \n \n",
+            "Josh's kindle, which has several coding textbooks--Fullstack React: The Complete Book on ReactJS and Friends by by Accomazzo Anthony and Murray Nathaniel, " +
+            "Learn Python 3 The Hard Way by Zed A. Shaw, Learning JavaScript Data Structures and Algorithms by Loiane Groner " +
+            "and Data Science from Scratch by Joel Grus. \n \n",
           use: function() {
             return useKindle();
           },
@@ -130,7 +132,7 @@ const gameData = {
         "of music, classic and modern 'literature', writing and research 'guides', " +
         "some seemingly ancient Dungeons " +
         "and Dragons 'books', and a lot of Kung-Fu dvds. There is also a slew of non-fiction books, " +
-        "mostly about history or biographies. \n \n",
+        "most are historical or biographies. \n \n",
       interactables: {
         folders: {
           take:
