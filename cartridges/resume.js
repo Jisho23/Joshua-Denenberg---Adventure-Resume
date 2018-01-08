@@ -23,7 +23,7 @@ const gameData = {
       displayName: "Entrance",
       description:
         "...You find yourself locked in my office! And you cannot " +
-        "leave untill you find three items of importance and use them! \n \n" +
+        "leave until you find three items of importance and use them! \n \n" +
         "This is effectively the least intimidating escape room ever. You see a simple desk, bookshelf, closet, and door out." +
         "\nIf at any time you are confused, type 'help'.\n\n",
       items: {},
