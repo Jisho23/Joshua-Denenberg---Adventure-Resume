@@ -134,7 +134,7 @@ var actions = {
         "\n  To pick something up, type 'take' followed by the item and type 'use' followed by the name of the item to use it!" +
         "\n  To move between areas, simply type 'go' followed by one of the options (either desk, bookshelf, exit, or closet)." +
         "\n  The game will only end after you have found all three main items and use them!" +
-        "\n  Keywords are in quotes." +
+        "\n  Keywords are in quotes. Try to 'look' or 'take' at any item in quotes." +
         "\n  At any time, you can type leave to leave the game, but please give it your best shot! I worked really hard on this."
     };
   },
