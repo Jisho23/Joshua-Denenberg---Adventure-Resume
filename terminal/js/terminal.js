@@ -53,6 +53,10 @@ $(function() {
   });
 });
 
+$(window).resize(function() {
+  displayResize();
+});
+
 // ===== Functions ======================================================================
 // ----- Send Message to Server ---------------------------------------------------------
 function messageServer(message) {
@@ -67,13 +71,30 @@ function displayResize() {
   $("#display").height($(window).height() - 30);
   $("#display").scrollTop($("#display")[0].scrollHeight);
 }
+
+// ---action store ------
+
+var actionStore = [];
+
 // ----- Write to Screen ----------------------------------------------------------------
 var userAction = "";
 function toScreen(message, actor) {
-  if (actor === "console") {
+  if (message === "prior") {
+    userAction = "> " + message + "\n \n";
+    if (actionStore.length > 1) {
+      battleTextScroll(userAction, actionStore[actionStore.length - 2], 0);
+    } else {
+      battleTextScroll(userAction, "Are you trying to break this game?!", 0);
+    }
+  } else if (actor === "console") {
+    var displayString = $("#display").val() + message + "\n";
     battleTextScroll(userAction, message, 0);
+    if (message !== "I don't know how to do that." && message !== "") {
+      actionStore.push(userAction + message);
+    }
     $("#display").scrollTop($("#display")[0].scrollHeight);
   } else {
+    debugger;
     toggleInput = !toggleInput;
     userAction = "> " + message + "\n \n";
   }
