@@ -20,7 +20,7 @@ All interactable objects (either to take or look) are in quotation marks.
 If at any time you are lost you can also type 'help' to review the controls and rules.
 
 Development:
-This is a mostly hacked together version of https://www.npmjs.com/package/text-adventure. Most of thebroox's engine is intact, but
+This is a mostly hacked together version of https://www.npmjs.com/package/text-adventure with elements from novel.js and an earlier turn-based RPG project I worked on. Most of thebroox's engine is intact, but
 I added some extra display elements (scrolling text) and methods.
 
 I hope you enjoy!
