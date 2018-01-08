@@ -81,7 +81,9 @@ function toScreen(message, actor) {
 
 function battleTextScroll(fullText, message, index) {
   if (index < message.length) {
-    $("#audio")[0].play();
+    let audio = $("#audio1")[0];
+    audio.volume = 0.1;
+    audio.play();
     $("#display").val(fullText + message[index]);
     index++;
     fullText = $("#display").val();

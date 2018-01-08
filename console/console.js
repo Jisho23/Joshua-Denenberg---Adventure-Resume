@@ -344,7 +344,7 @@ function exitsToString(exitsObject) {
     case 0:
       return "";
     case 1:
-      var returnString = " Exit is ";
+      var returnString = " (input 'go on' to continue...) ";
       break;
     default:
       var returnString = " You can go to the ";

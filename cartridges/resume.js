@@ -25,7 +25,7 @@ const gameData = {
         "...You find yourself locked in my office! And you cannot " +
         "leave until you find three items of importance and use them! \n \n" +
         "This is effectively the least intimidating escape room ever. You see a simple desk, bookshelf, closet, and the door out." +
-        "\nIf at any time you are confused, type 'help'.\n\n",
+        "\nIf at any time you are confused, type 'help' or type 'look' to get a better look at your surroundings.\n\n",
       items: {},
       exits: {
         desk: {
@@ -286,7 +286,10 @@ function end() {
   const player = gameData.player;
   if (player.usedDiploma && player.usedKindle && player.usedAtari) {
     gameData.map["End"].description =
-      "Congrats! You found all the hidden items around my office. \n \n";
+      "Congrats! You found all the hidden items around my office. I hope you had some fun" +
+      " and learned a bit about me and my experience, education, and what I am currently doing." +
+      " Feel free to contact me whenever at m email (j.denenberg42@gmail.com) or check out my github (username: Jisho23). " +
+      " Hope to hear from you soon!\n \n";
     gameData.map["End"].exits = {};
     gameData.gameOver = true;
   } else {
