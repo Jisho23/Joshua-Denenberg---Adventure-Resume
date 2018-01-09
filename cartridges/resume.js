@@ -4,7 +4,7 @@ const gameData = {
   gameOver: false,
   introText:
     "Welcome to Joshua Denenberg's interactive resume! If you are here, it means " +
-    "you are considering hiring a new programmer, engineer, or software developer." +
+    "you are considering hiring a new programmer, engineer, or web developer." +
     " Through this game, I am sure that you will find that " +
     "I am enthusiastic, knowledgable, creative, and most of all a capable programmer. " +
     "As well, you will hopefully get to know a little bit more about me, my hobbies, interests, and what I am currently working on (besides this game!). \n \n",
@@ -331,7 +331,7 @@ function useKindle() {
   return (
     "Searching more on the kindle, you find a couple more books related to " +
     "philosophy and technology. Josh clearly spends a lot of his time reading and " +
-    " tries to be as well versed as he can."
+    "tries to be as well versed as he can."
   );
 }
 
