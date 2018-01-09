@@ -79,6 +79,13 @@ var actionStore = [];
 // ----- Write to Screen ----------------------------------------------------------------
 var userAction = "";
 function toScreen(message, actor) {
+  debugger;
+  if (message.slice(0, message.indexOf(" ")) === "Congrats!") {
+    debugger;
+    let audio = $("#audio2")[0];
+    audio.volume = 0.1;
+    audio.play();
+  }
   if (message === "prior") {
     userAction = "> " + message + "\n \n";
     if (actionStore.length > 1) {
@@ -94,7 +101,6 @@ function toScreen(message, actor) {
     }
     $("#display").scrollTop($("#display")[0].scrollHeight);
   } else {
-    debugger;
     toggleInput = !toggleInput;
     userAction = "> " + message + "\n \n";
   }
