@@ -4,7 +4,7 @@ const gameData = {
   gameOver: false,
   introText:
     "Welcome to Joshua Denenberg's interactive resume! If you are here, it means " +
-    "you are considering hiring a new programmer, engineer, or web developer." +
+    "you are considering hiring a new programmer, software engineer, or web developer." +
     " Through this game, I am sure that you will find that " +
     "I am enthusiastic, knowledgable, creative, and most of all a capable programmer. " +
     "As well, you will hopefully get to know a little bit more about me, my hobbies, interests, and what I am currently working on (besides this game!). \n \n",
@@ -25,7 +25,7 @@ const gameData = {
         "...You find yourself locked in my office! And you cannot " +
         "leave until you find three items of importance and use them! \n \n" +
         "This is effectively the least intimidating escape room ever. You see a simple desk, bookshelf, closet, and the door out." +
-        "\nIf at any time you are confused, type 'help' or type 'look' to get a better look at your surroundings.\n To get started, try typing 'go to desk'. \n \n",
+        "\nIf at any time you are confused, type 'help' or type 'look' to get a better look at your surroundings.\nTo get started, try typing 'go to desk'. \n \n",
       items: {},
       exits: {
         desk: {
