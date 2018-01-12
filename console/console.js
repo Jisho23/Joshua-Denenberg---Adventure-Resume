@@ -115,7 +115,7 @@ var actions = {
     delete games[game.gameID];
     return {
       message:
-        "Somehow you have died. \n It's unfortunate your quest has come to an end here... load the game back up to try again.",
+        "Somehow you have died. \n It's a sad thing your adventure has ended here.﻿.. load the game back up to try again.",
       success: true
     };
   },
