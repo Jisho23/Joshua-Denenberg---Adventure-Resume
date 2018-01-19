@@ -63,9 +63,9 @@ const gameData = {
         drawer: {
           take: "Just because you can doesn't mean you should...",
           look:
-            "You open the desk drawer to find a kindle! Loaded on it is a couple of coding textbooks " +
+            "You open the desk drawer to find a 'kindle'! Loaded on it is a couple of coding textbooks " +
             "(Python the Hard Way, FullStack React, and Data Science from Scratch). Alongside it is a " +
-            "Nintendo Switch with 'Splatoon 2' running. \n \n"
+            "Nintendo 'Switch' with Splatoon 2 running. \n \n"
         },
         macbook: {
           take: "Hey! Don't take my MacBook!",
@@ -75,7 +75,7 @@ const gameData = {
             " algorithms, focusing on the Udemy tutorials by Stephen Grider and the Harvard CS50 course! " +
             "There's also a couple other tutorials and works in progress. Some are social media esq. experiments, " +
             "others try to use statistics to help play or analyze game data better such as one program that" +
-            " allows users to compare Steam libraries for recommendations, one is even building a frontend" +
+            " allows users to compare Steam libraries for recommendations, one is even building a frontend " +
             "for the Database of Woman Composers project. \n \n"
         },
         laptop: {
